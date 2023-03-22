@@ -10,7 +10,7 @@ class Model:
     def __init__(self):
         try:
             self.client = MongoClient(
-                "mongodb+srv://Ankush:ankush@cluster0.tpvyynu.mongodb.net/?retryWrites=true&w=majority")
+                "mongodb+srv://Ankush:<password>@cluster0.tpvyynu.mongodb.net/?retryWrites=true&w=majority")
             self.db = self.client.Luigi
             self.task = 0
             self.client.server_info()

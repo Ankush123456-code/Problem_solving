@@ -41,5 +41,5 @@ class IngestMetadata(luigi.Task):
 
 
 if __name__ == '__main__':
-    # host = "mongodb+srv://Ankush:Ankush@cluster0.tpvyynu.mongodb.net/?retryWrites=true&w=majority"
+
     luigi.build([IngestMetadata(file_path='train.csv')], local_scheduler=True)
