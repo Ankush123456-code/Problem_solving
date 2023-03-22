@@ -12,15 +12,15 @@ import enum
 #
 # print(SignerType["cs"].value[0])
 
-class SignerType:
-    SignerType = {
-        "cs": ["cs"],
-        "mift": ["mift", "cs"]
+class Signer:
+    Sign = {
+        "cse": ["cs"],
+        "mech": ["mech", "mech_ece"]
     }
 
     @classmethod
     def get(cls, attr):
-        return cls.SignerType.get(attr)
+        return cls.Sign.get(attr)
 
 
-print(SignerType.get("mift")[0])
+print(Signer.get("mech")[0])
