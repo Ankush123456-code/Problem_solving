@@ -1,6 +1,5 @@
 import luigi
 import pandas as pd
-from pymongo import MongoClient
 
 from Luigi_tutorial.Model import Model
 
@@ -41,5 +40,4 @@ class IngestMetadata(luigi.Task):
 
 
 if __name__ == '__main__':
-
     luigi.build([IngestMetadata(file_path='train.csv')], local_scheduler=True)
