@@ -5,7 +5,7 @@ def welcome(func):
         print("after func ")  # added new functionality
 
     return hello
-
+# one of the best concpet in python
 
 @welcome
 def Hello_world():
