@@ -13,6 +13,7 @@ class Solution:
                 return grid[i][j]
             left = dfs(i + 1, j)
             right = dfs(i, j + 1)
+
             ans = min(left, right) + grid[i][j]
             return ans
 
