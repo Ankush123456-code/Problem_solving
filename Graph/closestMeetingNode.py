@@ -10,6 +10,7 @@ class Solution:
             dist[node] = distance
             dfs(edges[node], distance + 1, dist)
 
+        print("hello")
         vis = set()
         dfs(node1, 0, dist1)
         vis = set()
