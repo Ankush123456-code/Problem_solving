@@ -3,13 +3,15 @@ class Solution:
         dist1 = [-1] * len(edges)
         dist2 = [-1] * len(edges)
         print("hello")
+
         def dfs(node, distance, dist):
             if node == -1 or node in vis:
                 return
             vis.add(node)
             dist[node] = distance
             dfs(edges[node], distance + 1, dist)
-        print("hello2")
+
+        print("hello")
         vis = set()
         dfs(node1, 0, dist1)
         vis = set()
